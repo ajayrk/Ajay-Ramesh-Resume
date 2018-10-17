@@ -1,0 +1,200 @@
+%-------------------------
+% Resume in Latex
+% Author : Ajay R
+% License : Open
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}	
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Ajay Command
+\newcommand{\resumePPItem}[2]{
+  \item\small{
+    \textbf{#1}{ #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+%Ajay Command
+\newcommand{\resumePPSubItem}[2]{\resumePPItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\blank}[1]{\hspace*{#1}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Ajay Ramesh}} & Email : \href{mailto:ajayr.ec07@gmail.com}{ajayr.ec07@gmail.com}\\
+  \href{https://www.linkedin.com/in/ajay-ramesh-kumar/}{linkedin.com/in/ajay-ramesh-kumar/} & Mobile : +91-8277419820 \\
+\end{tabular*}
+
+\section{Professional Profile}
+
+%Commented section-------------------------------------------
+\iffalse
+{Skilled Engineer with a zest for a challenging work environment with high degree of
+responsibility. Highly 
+flexible in adjusting work pace to meet evolving client needs.}
+\fi
+%Commented section-------------------------------------------
+\resumeSubHeadingListStart
+    \resumePPSubItem{}{Embedded Software Engineer with 2+ years of experience in development and validation of Automotive Software.}
+    \resumePPSubItem{}{Adept in C, VHDL and Assembly programming. Inquisitive Automation enthusiast in Python and Perl scripting. }
+    \resumePPSubItem{}{Good knowledge about ARM7 architecture. Seeking to use extensive skills in Designing Verification testcases. }
+    %\resumePPSubItem{}{}
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Robert Bosch Engineering and Business Solutions}{Bangalore, India}
+      {Embedded Software Engineer}{Jul 2016 - Present}
+      \resumeItemListStart
+        \item\small{Involved in development of automotive software for Engine Management System.\vspace{-2pt}}
+        \item\small{Responsible for configuration and integration of AUTOSAR modules. \vspace{-2pt}}
+		\iffalse
+        \item\small{Responsible for customer requirements analysis for AUTOSAR adapter. \vspace{-2pt}}
+		%\item\small{Handling and tracking System requirements (Issue SW)\vspace{-2pt}} 
+		\item\small{Coordination of System \& SW requirements between customer project and customer platform. \vspace{-2pt}}
+		\item\small{Carrying out System \& SW implementation review with function development. \vspace{-2pt}} 
+        %\item{}\small{Integration of various functional components to build a complete software.\vspace{-2pt}}
+        \fi
+        \item\small{Involved in the development of test cases for Software verification and validation.}
+		\item\small{Software Adapter development using Auto-Code Generation tools (ASCET).\vspace{-2pt}}
+		\item\small{Embedded Software Validation and debugging(UDE) on the ECU via an emulation platform.\vspace{-2pt}}
+		\item\small{\textbf{Key achievement} : Received good appreciation from the customer for debugging numerous critical issues.}
+		
+      \resumeItemListEnd
+
+      \textit{Automation Engineer}\vspace{-5pt}
+      \resumeItemListStart
+		\item\small{Responsible for fully automated Continuous build and deployment infrastructure for multiple projects.\vspace{-2pt}}
+		\item\small{Configuration using tools like Jenkins, Artifactory, GIT, SVN and other configuration management tools.\vspace{-2pt}}
+		\item\small{Responsible for Automation of AUTOSAR Module Development/Integration using Perl, JS, Batch Scripting.\vspace{-2pt}}
+		%\item{Designing, implementing and supporting fully automated Continuous Integration and Continuous Delivery processes.}
+		\item\small{Involved in configuration of TestBench and execution of Automated Testing in Jenkins.\vspace{-2pt}}
+		\item\small{\textbf{Key achievement} : Improved the overall productivity of the entire team by nearly 10$\%$.\vspace{-2pt}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Fluxgen Technologies Ltd}{Bangalore, India}
+      {Summer Intern}{May 2015 - July 2015}
+      \resumeItemListStart
+        \item\small{Developed embedded HW \& SW prototypes for Home Automation.\vspace{-2pt}}
+		\item\small{Interfaced Temperature, Motion, Combustion sensors to a micro-controller.\vspace{-2pt}}
+		\item\small{Deployed in an office and the data was logged into SD card for data analysis.\vspace{-2pt}}
+		\item\small{Developed a module to calculate power consumption of all appliances.\vspace{-2pt}}
+        \item\small{Plotted Voltage Waveforms in MATLAB for Real-Time Visualization. \vspace{-2pt}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Institute of Technology Karnataka}{Surathkal, India}
+      {B.Tech in Electronics \& Communication}{2012 - 2016}\\ \vspace{5pt}
+      %\resumeSubItem{GPA}{7.01}
+     % {\small Courses : VLSI Design, Digital System Design, %Microprocessors, Digital signal processing \\ Advanced %Computer Architecture, Control Systems, Linear Systems and Signals. }
+    \iffalse
+    \resumeSubheading
+      {Vidya Mandir P.U College}{Bangalore, India}
+      {12th, PCMB}{2010 - 2012}
+	\resumeSubheading
+	  {M.E.S. Kishore Kendra}{Bangalore, India}
+	  {10$^{th}$, High School}{2007 - 2010}
+	\fi  
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+  \resumeSubItem{Tetris Game using Nexys 4 (FPGA)}
+      {Emulated on a FPGA board with a VGA monitor using Xilinx.}
+  \resumeSubItem{Recognizing hand-written digits}
+	  {A Simple SVM classifier was implemented using Sklearn Py Modules.}
+  \resumeSubItem{Arduino Radar}{Designed a Mini-Radar which detects objects around 8-10m circumferrence.}
+  \resumeSubItem{Music Composer (DSK C6713)}
+  {Generatation of discrete sinusoids of musical notes using the sampling frequency.}
+  \resumeSubItem{Deep learning with OpenCL}
+  {Implemented MNIST Neural Network using parallel computing algorithms in OpenCL.}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+      \resumeSubItem{Programming}{: C, Python, Perl, VHDL, MATLAB, ARM programming}
+      \resumeSubItem{Protocols}{:  CAN, SPI, I2C}
+      \resumeSubItem{Softwares}{:  Xilinx, Eclipse, LtSpice, Code Composer Studio}
+      %\resumeSubItem{Requirement Management}{: ClearQuest, RequestOne, ALM}
+      \resumeSubItem{Languages}{:  English (Fluent), French (Beginner), German (Beginner) Kannada (Native)}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+
+
+\end{document}
